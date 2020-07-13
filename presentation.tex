@@ -1,0 +1,46 @@
+\documentclass[10pt]{beamer}
+
+\usetheme[progressbar=frametitle]{metropolis}
+\usepackage[]{verbatim}\usepackage[]{}
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+\usepackage[misc]{ifsym}
+\usepackage{wasysym}
+\usepackage{listings}
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+\addtobeamertemplate{frametitle}{}{%
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north east,yshift=2pt,xshift=-65pt] at (current page.north east) {\includegraphics[height=.75cm]{img/elixir-portugal-white}};
+\node[anchor=north east,yshift=4pt] at (current page.north east) {\includegraphics[height=1cm]{img/biodata}};
+\end{tikzpicture}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{Presentation Title}
+\date{MONTH DAY, YEAR}
+\author{AUTHOR NAME\\
+        AUTHOR E-MAIL}
+\institute{AUTHOR AFFILIATION}
+\titlegraphic{\vspace{4cm}\hfill\includegraphics[height=1cm]{img/elixir-portugal}\includegraphics[height=1cm]{img/biodata}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{A SECTION TITLE}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{frame}[fragile]{SLIDE TITLE}
+  \begin{center}
+    \begin{itemize}
+      \textbf{WPX - WORK PACKAGE TITLE}\item %ugly hacks...
+      \item ITEM 1
+      SOME LINK
+      \item ITEM 2
+    \end{itemize}
+  \end{center}
+\end{frame}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\plain{Thank You\\ \ \\ \Huge{\smiley}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
